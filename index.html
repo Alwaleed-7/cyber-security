@@ -97,8 +97,6 @@ body {
     margin-bottom: 2rem;
     box-shadow: 0 1px 12px rgba(120,80,180,.10);
 }
-
-/* مربع البحث الكبير والجميل */
 .search-box {
     width: 100%;
     max-width: 540px;
@@ -120,7 +118,7 @@ body {
     border: none;
     border-radius: 18px;
     background: rgba(230,220,255,0.13);
-    color: #222; /* لون نص غامق وواضح */
+    color: #222;
     font-family: inherit;
     outline: none;
     transition: box-shadow 0.2s, background 0.2s;
@@ -133,41 +131,12 @@ body {
 }
 .search-box input[type="search"]::placeholder,
 .search-box input[type="text"]::placeholder {
-    color: #666; /* لون نص الـplaceholder واضح */
+    color: #666;
     opacity: 0.85;
 }
-.search-box .search-icon {
-    position: absolute;
-    right: 2.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #7c52c9;
-    font-size: 1.45rem;
-    opacity: 0.7;
-}
-.search-box button {
-    background: linear-gradient(45deg, #764ba2, #667eea 80%);
-    color: #fff;
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 16px;
-    font-size: 1.05rem;
-    font-weight: bold;
-    cursor: pointer;
-    margin-left: 1rem;
-    box-shadow: 0 2px 9px rgba(120,80,180,0.12);
-    transition: background 0.2s, box-shadow 0.18s;
-}
-.search-box button:hover,
-.search-box button:focus {
-    background: linear-gradient(45deg, #ac79ef, #667eea 80%);
-    box-shadow: 0 4px 12px rgba(76,71,109,0.16);
-}
-
-/* أزرار الفلاتر: متناسقة وأنيقة مع ألوان مريحة */
 .filter-btn, .filter-group select, .filter-group button {
     background: rgba(140,95,200,0.12);
-    color: #000; /* تغيير لون الخط إلى أسود */
+    color: #000;
     border: none;
     border-radius: 9px;
     padding: 0.9rem 1.5rem;
@@ -177,19 +146,9 @@ body {
     cursor: pointer;
     box-shadow: 0 1px 6px rgba(120,80,180,0.08);
 }
-.filter-btn.active, .filter-group select:focus, .filter-group button:active, .filter-group button.selected {
-    background: linear-gradient(45deg, #43cea2 40%, #764ba2 80%);
-    color: #000; /* تغيير لون الخط إلى أسود */
-    box-shadow: 0 2px 9px rgba(70,180,160,0.19);
-}
 .filter-btn:hover, .filter-group button:hover {
     background: linear-gradient(45deg,#764ba2 70%, #ac79ef 100%);
-    color: #000; /* تغيير لون الخط إلى أسود */
-
-}
-.filter-btn:focus {
-    outline: none;
-    background: linear-gradient(45deg,#43cea2 30%, #ac79ef 100%);
+    color: #000;
 }
 .filter-group label {
     color: #FFD700;
@@ -365,17 +324,12 @@ button:hover, .show-answer-btn:hover {
     .controls, .question-card { padding: 1.1rem 0.5rem; }
     .header-text h1 { font-size: 2rem; }
 }
-
-
-</style>
-    
-</head>
+    </style>
+<script type="text/javascript" nonce="1cca1f6c8064491dafe512a6b51" src="//local.adguard.org?ts=1757708283269&amp;type=content-script&amp;dmn=ppl-ai-code-interpreter-files.s3.amazonaws.com&amp;url=https%3A%2F%2Fppl-ai-code-interpreter-files.s3.amazonaws.com%2Fweb%2Fdirect-files%2Fe16705bf379932ee09e9ce4e1b8c4101%2F43fa0f42-bd9a-43e1-aa88-27e8b6aca49c%2F20e3bbe5.html%3Fresponse-content-disposition%3Dattachment%253B%2520filename%253Dcybersecurity-webapp-updated.html%253B%2520filename%252A%253DUTF-8%2527%2527cybersecurity-webapp-updated.html%26AWSAccessKeyId%3DASIA2F3EMEYE2QINDXRY%26Signature%3DIKIGNMJfkiEVYbcmoAxwWqdtDFc%253D%26x-amz-security-token%3DIQoJb3JpZ2luX2VjEL3%252F%252F%252F%252F%252F%252F%252F%252F%252F%252FwEaCXVzLWVhc3QtMSJHMEUCIQCp%252BMrSU4DQxdj2zYjE72IAxjamAJj6HZuouojDU7VmzwIgJYPyNyvfIpjCP6JLuam5TrXH%252BQo4gUxRCVYjmJ7Kt1Eq8QQINRABGgw2OTk3NTMzMDk3MDUiDCer9wSiBDu0ohzQ3yrOBFwJD%252BLX6ZcqaI9nB0E6VX09ADPujKf9JJkEdHP8iifQ8nNiEyEBRbMCePWA4CFZC06qMoMgN9AIKDmNR%252FkC0Cf1j8lBS8puoX0NnnqoTQSRpbYl5Y3PKVqLOWkMQGcDFZWhp0khYRSRsE9svn3Whz8yb229rvqI7trvt7KEvBHEIqZ36hweQ0SRr7OLHAYtfhpo47m6OPCuHrZsv74WfADKS5cR8BaFbnkQO6WurYuwuCj59njYewV0iw5xQiWS8LjfMXO%252FHS%252FRQMCwX%252B9jqhnGaOS02R8ESQU7i80w96bMihHFqmZhlReIBEvgJuddFexE%252B9QtwOLfr38%252B0ej7xhIbh1plhZS7W7%252BUDSXO0WmYQjEx0cb2aHddp7yDxbYVSkjIbSqA4PNw0CUcxrZ6nhpF9XA%252Fz0Ir3dzYde9DM99cDFgjBtrHp8Oc9t0ZsBZvvHoIfXkdkH9LSedl%252FUKDDZivAVXEV77mCLYkhazMDT3iVaXX2lVaQdW9UUQbF2MtXj6xqCWQqHmywUjPFsGtPSs8ZrGqOVvVvIwfBN7HQIBlMPP%252BIW3EY4FgKIhqhRl8yGsVyb4jD0oxEXHAUvfMS9lhu4c89OS7m6XrwGsm75EzuxkYT7Q4ghF2eVMlhpsom3AvbFPqE2JOsku3OznWgoDWStCCxlBIywW7Sk86qW0ZJJje0P%252FMvaJVVNE7mgynoo4JYmELmnYor5FtSEXGEOBKVn0%252FvBl%252FlVj0yaFMmEuMKXA8%252FU0mKs3eIblliYYUaXU3J7kUzUXaWorAfcT2MJ78kcYGOpoBIxt5fZdtq0IcU8mpksV92gfCR6Dgd57h4WNijWzQ29xOO394P18tbRDolNJ8i5axqPyfXaCjz4F0plBC8QEUtijHySdAaXbhgbeXkgrChFjvag80Pn3aFxRFKfFvhYM4bNBYrE2JsWkmeuXNTQuWRuE1pj45HgLCDlyDqoqFoc1sq56Kv8LoUksOOO2Moqq21aeM7xl7yKiu5Q%253D%253D%26Expires%3D1757710068&amp;app=brave.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script><script type="text/javascript" nonce="1cca1f6c8064491dafe512a6b51" src="//local.adguard.org?ts=1757708283269&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script></head>
 <body>
-
     <div class="header">
         <div class="header-content">
             <div class="logo">
-                <!-- High-quality scaled-down PNG logo -->
                 <img src="logo.png" alt="معهد جازان العالي للتدريب Logo">
             </div>
             <div class="header-text">
@@ -388,23 +342,37 @@ button:hover, .show-answer-btn:hover {
     <div class="container">
         <!-- Statistics -->
         <div class="stats-grid">
-            <div class="stat-card"><div class="stat-number">300</div><div>إجمالي الأسئلة</div></div>
-            <div class="stat-card"><div class="stat-number">120</div><div>أسئلة سهلة</div></div>
-            <div class="stat-card"><div class="stat-number">120</div><div>أسئلة متوسطة</div></div>
-            <div class="stat-card"><div class="stat-number">60</div><div>أسئلة صعبة</div></div>
-            <div class="stat-card"><div class="stat-number">240</div><div>اختيار متعدد</div></div>
-            <div class="stat-card"><div class="stat-number">60</div><div>صح وخطأ</div></div>
+            <div class="stat-card"><div class="stat-number">23</div><div>إجمالي الأسئلة</div></div>
+            <div class="stat-card"><div class="stat-number">16</div><div>أسئلة سهلة</div></div>
+            <div class="stat-card"><div class="stat-number">6</div><div>أسئلة متوسطة</div></div>
+            <div class="stat-card"><div class="stat-number">1</div><div>أسئلة صعبة</div></div>
+            <div class="stat-card"><div class="stat-number">23</div><div>اختيار متعدد</div></div>
+            <div class="stat-card"><div class="stat-number">0</div><div>صح وخطأ</div></div>
         </div>
 
         <!-- Controls -->
         <div class="controls">
             <div class="filter-group">
-                <input id="searchBox" class="search-box" placeholder="ابحث في الأسئلة...">
+                <input id="searchBox" type="search" placeholder="ابحث في الأسئلة...">
             </div>
             <div class="filter-group">
-                <label>المقرر:</label><select id="courseFilter"><option value="">جميع المقررات</option></select>
-                <label>مستوى الصعوبة:</label><select id="difficultyFilter"><option value="">جميع المستويات</option><option value="سهل">سهل</option><option value="متوسط">متوسط</option><option value="صعب">صعب</option></select>
-                <label>نوع السؤال:</label><select id="typeFilter"><option value="">جميع الأنواع</option><option value="اختيار متعدد">اختيار متعدد</option><option value="صح وخطأ">صح وخطأ</option></select>
+                <label>المقرر:</label>
+                <select id="courseFilter">
+                    <option value="">جميع المقررات</option>
+                </select>
+                <label>مستوى الصعوبة:</label>
+                <select id="difficultyFilter">
+                    <option value="">جميع المستويات</option>
+                    <option value="سهل">سهل</option>
+                    <option value="متوسط">متوسط</option>
+                    <option value="صعب">صعب</option>
+                </select>
+                <label>نوع السؤال:</label>
+                <select id="typeFilter">
+                    <option value="">جميع الأنواع</option>
+                    <option value="اختيار متعدد">اختيار متعدد</option>
+                    <option value="صح وخطأ">صح وخطأ</option>
+                </select>
                 <button onclick="applyFilters()">تطبيق الفلاتر</button>
                 <button onclick="resetFilters()">إعادة تعيين</button>
                 <button onclick="shuffleQuestions()">خلط الأسئلة</button>
@@ -416,7 +384,6 @@ button:hover, .show-answer-btn:hover {
             <h2>مرحباً بك في منصة التحضير للاختبار الشامل</h2>
             <p>تم إعداد هذه المنصة خصيصاً لطلاب تخصص الأمن السيبراني</p>
             <p><strong>معهد جازان العالي للتدريب</strong></p>
-            <p>يرجى إضافة بيانات الأسئلة لبدء الاستخدام</p>
         </div>
 
         <!-- Pagination -->
